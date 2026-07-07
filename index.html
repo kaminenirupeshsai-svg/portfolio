@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rupesh Sai Kamineni | Portfolio</title>
+  <meta name="description" content="Personal portfolio of Rupesh Sai Kamineni — Full Stack Developer | Node.js Developer | Software Engineering Graduate" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Header / Navbar -->
+  <header class="header" id="header">
+    <nav class="navbar container">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <a href="#hero" class="logo">Rupesh sai <span>Kamineni</span></a>
+
+      <div class="nav-right">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#hero" class="nav-link active-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#events" class="nav-link">Events</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <svg class="icon-sun" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"/></svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="hero-blob hero-blob-1" aria-hidden="true"></div>
+      <div class="hero-blob hero-blob-2" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-text reveal">
+          <p class="hero-greeting">Hello, I'm</p>
+          <h1 class="hero-name">Rupesh sai kamineni</h1>
+          <h2 class="hero-role">
+            <span class="typed-text" id="typedText"></span><span class="cursor">|</span>
+          </h2>
+          <p class="hero-desc">
+            I'm a final-year Computer Science Engineering student with a solid foundation
+            in front-end and back-end web development. I love building clean, responsive,
+            user-friendly interfaces, and I'm eager to apply my skills to real-world
+            software and backend development projects.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">View My Projects</a>
+            <a href="assets/resume" class="btn btn-outline" download="Kamineni_Rupesh_Sai_Resume.pdf">Download Resume</a>
+          </div>
+          <div class="hero-socials">
+            <a href="https://github.com/kaminenirupeshsai-svg" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 .5C5.73.5.98 5.24.98 11.5c0 4.93 3.29 9.11 7.86 10.59.57.1.79-.24.79-.54v-2.1c-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.8 1.19 1.83 1.19 3.09 0 4.41-2.7 5.38-5.27 5.67.41.36.78 1.08.78 2.18v3.23c0 .3.21.65.8.54A11.51 11.51 0 0 0 23.02 11.5C23.02 5.24 18.27.5 12 .5Z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/kamineni-rupesh-sai-130808218" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.86 0-2.15 1.45-2.15 2.94v5.66H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.8 0 0 .78 0 1.74v20.52C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.74V1.74C24 .78 23.2 0 22.22 0Z"/></svg>
+            </a>
+            <a href="mailto:kaminenirupeshsai0@gmail.com" aria-label="Email">
+              <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M1.5 4.5A1.5 1.5 0 0 1 3 3h18a1.5 1.5 0 0 1 1.5 1.5v15A1.5 1.5 0 0 1 21 21H3a1.5 1.5 0 0 1-1.5-1.5v-15Zm2.2.75 8.3 6.4 8.3-6.4H3.7Zm16.8 1.53-8.02 6.19a1.5 1.5 0 0 1-1.96 0L2.5 6.78V19.5h19V6.78Z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-image reveal">
+          <div class="hero-photo-wrap">
+            <img src="assets/profile-photo.jpg" alt="Rupesh Sai Kamineni profile photo" class="hero-photo" />
+          </div>
+        </div>
+      </div>
+      <a href="#about" class="scroll-down" aria-label="Scroll to About section">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+      <div class="container">
+        <h2 class="section-title reveal">About Me</h2>
+        <p class="section-subtitle reveal">Get to know a little more about who I am</p>
+
+        <div class="about-content">
+          <div class="about-text reveal">
+            <p>
+              I'm a final-year Computer Science Engineering student with a solid
+              foundation in front-end and back-end web development, including HTML, CSS,
+              JavaScript, Node.js, Express.js, MySQL, and MongoDB, along with basic
+              proficiency in Python. I'm experienced in building clean, responsive, and
+              user-friendly interfaces with a strong focus on usability and structured
+              design.
+            </p>
+            <p>
+              I'm a quick learner and a collaborative team player, eager to apply my
+              technical skills and problem-solving ability to contribute to real-world
+              software and backend development projects.
+            </p>
+            <div class="about-stats">
+              <div class="stat-card reveal">
+                <h3>Fresher</h3>
+                <p>Looking for Opportunities</p>
+              </div>
+              <div class="stat-card reveal">
+                <h3>3+</h3>
+                <p>Projects Built</p>
+              </div>
+              <div class="stat-card reveal">
+                <h3>7.5</h3>
+                <p>CGPA / 10</p>
+              </div>
+            </div>
+            <div class="soft-skills">
+              <span>Problem Solving</span>
+              <span>Teamwork</span>
+              <span>Communication</span>
+              <span>Adaptability</span>
+              <span>Quick Learner</span>
+              <span>Time Management</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+      <div class="container">
+        <h2 class="section-title reveal">Skills</h2>
+        <p class="section-subtitle reveal">Technologies and tools I work with</p>
+
+        <div class="skills-grid">
+          <div class="skill-card reveal">
+            <div class="skill-icon">🌐</div>
+            <h3>HTML5 &amp; CSS3</h3>
+            <div class="skill-bar"><span style="width: 85%;"></span></div>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-icon">⚡</div>
+            <h3>JavaScript</h3>
+            <div class="skill-bar"><span style="width: 80%;"></span></div>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-icon">🟢</div>
+            <h3>Node.js</h3>
+            <div class="skill-bar"><span style="width: 70%;"></span></div>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-icon">⚙️</div>
+            <h3>Express.js</h3>
+            <div class="skill-bar"><span style="width: 70%;"></span></div>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-icon">🗄️</div>
+            <h3>MySQL</h3>
+            <div class="skill-bar"><span style="width: 60%;"></span></div>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-icon">🍃</div>
+            <h3>MongoDB</h3>
+            <div class="skill-bar"><span style="width: 65%;"></span></div>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-icon">🐍</div>
+            <h3>Python (Basics)</h3>
+            <div class="skill-bar"><span style="width: 50%;"></span></div>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-icon">🔧</div>
+            <h3>Git &amp; VS Code</h3>
+            <div class="skill-bar"><span style="width: 75%;"></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+      <div class="container">
+        <h2 class="section-title reveal">Projects</h2>
+        <p class="section-subtitle reveal">Projects I've built while learning and growing as a developer</p>
+
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-image">
+              <img src="assets/project-placeholder.svg" alt="To-Do List Application preview" />
+              <div class="project-overlay">
+                <a href="https://probable-seat.surge.sh" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Live demo">🔗</a>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Source code">💻</a>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>To-Do List Application</h3>
+              <p>A task management web app to add, edit, mark complete, and delete tasks in real time, with dynamic DOM updates in vanilla JavaScript for a smooth, interactive experience. Uses Supabase for auth and data storage.</p>
+              <div class="project-tags">
+                <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Supabase</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-image">
+              <img src="assets/project-placeholder.svg" alt="VoiceUp — E-Grievance Portal preview" />
+              <div class="project-overlay">
+                <a href="https://voiceup-grievance-portal.onrender.com" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Live demo">🔗</a>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Source code">💻</a>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>VoiceUp — E-Grievance Portal</h3>
+              <p>Designed and developed the complete front-end interface for a grievance redressal portal, letting users register complaints and track status updates with a clean, accessible, responsive UI.</p>
+              <div class="project-tags">
+                <span>HTML5</span><span>CSS3</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-image">
+              <img src="assets/project-placeholder.svg" alt="Portfolio Website preview" />
+              <div class="project-overlay">
+                <a href="#" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Live demo">🔗</a>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Source code">💻</a>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Portfolio Website</h3>
+              <p>My personal portfolio — a fully responsive site built with HTML, CSS, and JavaScript to showcase my skills, projects, and resume.</p>
+              <div class="project-tags">
+                <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section education" id="education">
+      <div class="container">
+        <h2 class="section-title reveal">Education</h2>
+        <p class="section-subtitle reveal">My academic background</p>
+
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2019 — 2020</span>
+              <h3>Secondary Schooling</h3>
+              <p>Sri Vivekananda Vidyanikethan High School, Telangana, India — GPA: 9.7 / 10</p>
+            </div>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2020 — 2022</span>
+              <h3>Higher Secondary Schooling</h3>
+              <p>Sri Chaitanya Junior College, Telangana, India — GPA: 8.05 / 10</p>
+            </div>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2022 — 2026</span>
+              <h3>B.Tech in Computer Science Engineering</h3>
+              <p>ITM University, Gwalior, India — CGPA: 7.5 / 10 (Overall)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Events & Conferences Section -->
+    <section class="section events" id="events">
+      <div class="container">
+        <h2 class="section-title reveal">Events &amp; Conferences</h2>
+        <p class="section-subtitle reveal">Workshops and conferences I've attended</p>
+
+        <div class="events-grid">
+          <div class="event-card reveal">
+            <div class="event-icon">🎤</div>
+            <div class="event-info">
+              <span class="event-date">June 2026</span>
+              <h3>MongoDB.local Bengaluru</h3>
+              <p>Attended community conference on MongoDB, including sessions on "From RDBMS to NoSQL at Enterprise Scale" and "Building Production-Grade AI Agents with MongoDB".</p>
+              <a href="https://www.mongodb.com/events/mongodb-local/bengaluru" target="_blank" rel="noopener noreferrer" class="event-link">Know more →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <h2 class="section-title reveal">Get In Touch</h2>
+        <p class="section-subtitle reveal">Have a project in mind? Let's talk.</p>
+
+        <div class="contact-content">
+          <div class="contact-info reveal">
+            <div class="contact-item">
+              <span class="contact-icon">📧</span>
+              <div>
+                <h4>Email</h4>
+                <p>kaminenirupeshsai0@gmail.com</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">📱</span>
+              <div>
+                <h4>Phone</h4>
+                <p>+91 93906 45576</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">📍</span>
+              <div>
+                <h4>Location</h4>
+                <p>Khammam, India</p>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact-form reveal" id="contactForm" novalidate>
+            <div class="form-group">
+              <input type="text" id="name" name="name" placeholder="Your Name" required />
+              <span class="error-msg" id="nameError"></span>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" name="email" placeholder="Your Email" required />
+              <span class="error-msg" id="emailError"></span>
+            </div>
+            <div class="form-group">
+              <input type="text" id="subject" name="subject" placeholder="Subject" required />
+              <span class="error-msg" id="subjectError"></span>
+            </div>
+            <div class="form-group">
+              <textarea id="message" name="message" rows="6" placeholder="Your Message" required></textarea>
+              <span class="error-msg" id="messageError"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <a href="#hero" class="logo">Rupesh sai <span>Kamineni</span></a>
+      <ul class="footer-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="footer-socials">
+        <a href="https://github.com/kaminenirupeshsai-svg" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 .5C5.73.5.98 5.24.98 11.5c0 4.93 3.29 9.11 7.86 10.59.57.1.79-.24.79-.54v-2.1c-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.8 1.19 1.83 1.19 3.09 0 4.41-2.7 5.38-5.27 5.67.41.36.78 1.08.78 2.18v3.23c0 .3.21.65.8.54A11.51 11.51 0 0 0 23.02 11.5C23.02 5.24 18.27.5 12 .5Z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/kamineni-rupesh-sai-130808218" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.86 0-2.15 1.45-2.15 2.94v5.66H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.8 0 0 .78 0 1.74v20.52C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.74V1.74C24 .78 23.2 0 22.22 0Z"/></svg>
+        </a>
+        <a href="mailto:kaminenirupeshsai0@gmail.com" aria-label="Email">
+          <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M1.5 4.5A1.5 1.5 0 0 1 3 3h18a1.5 1.5 0 0 1 1.5 1.5v15A1.5 1.5 0 0 1 21 21H3a1.5 1.5 0 0 1-1.5-1.5v-15Zm2.2.75 8.3 6.4 8.3-6.4H3.7Zm16.8 1.53-8.02 6.19a1.5 1.5 0 0 1-1.96 0L2.5 6.78V19.5h19V6.78Z"/></svg>
+        </a>
+      </div>
+    </div>
+    <p class="footer-bottom">&copy; <span id="year"></span> Rupesh Sai Kamineni. All rights reserved.</p>
+  </footer>
+
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
