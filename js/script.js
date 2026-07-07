@@ -183,7 +183,7 @@ function validateField(field) {
   });
 });
 
-const CONTACT_API_URL = 'https://your-backend-host.example.com/api/contact';
+const CONTACT_API_URL = 'https://portfolio-xuad.onrender.com/api/contact';
 
 contactForm.addEventListener('submit', async (e) => {
   e.preventDefault();
