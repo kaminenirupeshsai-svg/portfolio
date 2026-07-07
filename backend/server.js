@@ -1,7 +1,6 @@
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
-const crypto = require('crypto');
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -11,14 +10,6 @@ const NOTIFY_EMAIL = process.env.NOTIFY_EMAIL;
 
 app.use(cors({ origin: ALLOWED_ORIGIN }));
 app.use(express.json());
-
-console.log(
-  'RESEND_API_KEY loaded:',
-  RESEND_API_KEY
-    ? `length ${RESEND_API_KEY.length}, fingerprint ${crypto.createHash('sha256').update(RESEND_API_KEY).digest('hex').slice(0, 12)}`
-    : 'MISSING'
-);
-console.log('NOTIFY_EMAIL loaded:', NOTIFY_EMAIL || 'MISSING');
 
 function escapeHtml(str) {
   return str
