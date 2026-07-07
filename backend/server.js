@@ -11,6 +11,12 @@ const NOTIFY_EMAIL = process.env.NOTIFY_EMAIL;
 app.use(cors({ origin: ALLOWED_ORIGIN }));
 app.use(express.json());
 
+console.log(
+  'RESEND_API_KEY loaded:',
+  RESEND_API_KEY ? `${RESEND_API_KEY.slice(0, 7)}... (length ${RESEND_API_KEY.length})` : 'MISSING'
+);
+console.log('NOTIFY_EMAIL loaded:', NOTIFY_EMAIL || 'MISSING');
+
 function escapeHtml(str) {
   return str
     .replace(/&/g, '&amp;')
